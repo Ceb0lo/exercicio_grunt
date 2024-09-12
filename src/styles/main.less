@@ -1,0 +1,60 @@
+@fontPrincipal: "Roboto", system-ui;
+@fontSecundaria: "Nunito", system-ui;
+@corDoTexto: #dfe6e9 ;
+@corDeFundo: #d63031;
+@corDoButton: #fdcb6e;
+
+body{
+    background-color: @corDeFundo;
+    color: @corDoTexto;
+    font-family: @fontPrincipal;
+}
+
+h1{
+    font-family: @fontSecundaria;
+    font-size: 3em;
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button{
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: @fontPrincipal;
+    font-size: 1.3em;
+    background-color: @corDoButton ;
+    color: #000;
+}
+
+input{
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    text-align: center;
+    color: @corDoTexto;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid @corDoTexto;
+}
+
+#result{
+    display: none;
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted @corDoTexto;
+
+    span{
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+    }
+}
